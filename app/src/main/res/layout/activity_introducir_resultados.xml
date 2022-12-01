@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/global_padding"
+    tools:context=".IntroducirResultados">
+
+    <LinearLayout
+        android:id="@+id/ll_container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_input_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/introducir_resultado"
+            android:textSize="22sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_date_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_date_hour"
+            android:inputType="datetime"
+            android:minHeight="48dp"
+            android:textAlignment="center">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_group_phase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_group_phase"
+            android:textAlignment="center">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_teams_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_container1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_select_team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_team1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/et_select_team1"
+                android:minHeight="48dp">
+
+            </EditText>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btn_color"
+                android:layout_marginStart="10dp"
+                android:text="@string/select_team">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_select_team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_team2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/et_select_team2"
+                android:minHeight="48dp">
+
+            </EditText>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/btn_color"
+                android:text="@string/select_team">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_goals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_teams_container"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_goals_team1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:minHeight="48dp"
+            android:hint="@string/et_goals_team1">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/separator"
+            android:textSize="22sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_goals_team2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:minHeight="48dp"
+            android:hint="@string/et_goals_team2">
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_clear"
+        android:backgroundTint="@color/btn_color">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_clear"
+        android:text="@string/btn_save_result"
+        android:backgroundTint="@color/btn_color">
+    </Button>
+
+
+</RelativeLayout>

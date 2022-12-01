@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/global_padding"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_qatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/img_logo_margin_bottom"
+        android:src="@drawable/qatarlogo" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/btn_color"
+        android:text="@string/btn_registrar">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_consult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_register"
+        android:backgroundTint="@color/btn_color"
+        android:text="@string/btn_consult">
+
+    </Button>
+
+
+
+</RelativeLayout>
