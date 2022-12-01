@@ -31,6 +31,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_germany"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -47,9 +48,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_saudiArabia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_saudiArabia"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -61,60 +63,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_argentina"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:weightSum="3"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_argentina"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -135,9 +87,10 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_australia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_australia"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -149,9 +102,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_belgium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_belgium"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -163,60 +117,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_brazil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:weightSum="3"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_brazil"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -237,9 +141,10 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_cameroon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_cameroon"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -251,9 +156,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_canada"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_canada"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -265,60 +171,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_korea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:weightSum="3"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_korea"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -339,9 +195,10 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_costaRica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_costaRica"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -353,9 +210,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_croatia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_croatia"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -367,60 +225,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_denmark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:weightSum="3"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_denmark"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -441,9 +249,10 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_ecuador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_ecuador"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -455,9 +264,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_spain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_spain"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -469,60 +279,10 @@
             </Button>
 
             <Button
+                android:id="@+id/btn_usa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:weightSum="3"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_usa"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -543,9 +303,295 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_france"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_france"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_wales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_wales"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_ghana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_ghana"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_netherlands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_netherlands"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_england"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_england"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_Iran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_iran"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_japan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_japan"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/morroco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_morroco"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_mexico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_mexico"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_poland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_poland"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_portugal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_portugal"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_qatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_qatar"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_Senegal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_senegal"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_serbia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_serbia"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_switzerland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_switzerland"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_tunisia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_tunisia"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_uruguay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_urugay"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
                 android:textAlignment="textStart"
@@ -559,21 +605,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
-                android:paddingTop="0dp"
-                android:textSize="12sp"
-                android:textAlignment="textStart"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:backgroundTint="@android:color/transparent"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_germany"
+                android:text="@string/btn_blank"
                 android:enabled="false"
                 android:paddingTop="0dp"
                 android:textSize="12sp"
