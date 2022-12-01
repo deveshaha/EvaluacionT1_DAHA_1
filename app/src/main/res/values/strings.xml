@@ -15,4 +15,10 @@
     <string name="et_select_team1">Selecciona el equipo 1</string>
     <string name="tv_consulta_resultados">"Consultar resultados pais "</string>
     <string name="et_introducir_pais">Introduce el pais</string>
+    <string name="tv_seleccion_equipo">Seleccion de equipo</string>
+    <string name="btn_germany">Alemania</string>
+    <string name="qatar_logo">qatar_logo</string>
+    <string name="hint_introduce">Introduce el país seleccionado</string>
+    <string name="btn_cancel">cancelar</string>
+    <string name="btn_accept">Aceptar</string>
 </resources>

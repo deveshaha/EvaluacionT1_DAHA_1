@@ -14,7 +14,8 @@
         android:layout_above="@id/button_register"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/img_logo_margin_bottom"
-        android:src="@drawable/qatarlogo" />
+        android:src="@drawable/qatarlogo"
+        android:contentDescription="@string/qatar_logo" />
 
     <Button
         android:id="@+id/button_register"
@@ -35,7 +36,5 @@
         android:text="@string/btn_consult">
 
     </Button>
-
-
 
 </RelativeLayout>

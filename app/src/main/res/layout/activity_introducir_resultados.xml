@@ -40,7 +40,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/et_group_phase"
+            android:inputType="text"
+            android:minHeight="48dp"
             android:textAlignment="center">
+
         </EditText>
 
     </LinearLayout>
@@ -63,12 +66,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:enabled="false"
+                android:inputType="text"
                 android:hint="@string/et_select_team1"
                 android:minHeight="48dp">
 
             </EditText>
 
             <Button
+                android:id="@+id/btn_select_team1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/btn_color"
@@ -89,12 +95,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:enabled="false"
+                android:inputType="text"
                 android:hint="@string/et_select_team2"
                 android:minHeight="48dp">
 
             </EditText>
 
             <Button
+                android:id="@+id/btn_select_team2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -157,6 +166,7 @@
     </Button>
 
     <Button
+        android:id="@+id/btn_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btn_clear"

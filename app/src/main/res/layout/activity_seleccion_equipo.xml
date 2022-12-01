@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/global_padding"
+    tools:context=".SeleccionEquipo">
+
+    <TextView
+        android:id="@+id/tv_seleccion_equipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/tv_seleccion_equipo"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_team_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_seleccion_equipo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:paddingTop="0dp"
+                android:text="@string/btn_germany"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="DuplicateSpeakableTextCheck">
+
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_germany"
+                android:enabled="false"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_introduce"
+        android:inputType="text"
+        android:layout_above="@id/ll_btns"
+        android:enabled="false">
+
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_accept"
+            android:layout_weight="1.5"
+            android:backgroundTint="@color/btn_color">
+
+        </Button>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+        </View>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"
+            android:layout_weight="1.5"
+            android:backgroundTint="@color/btn_color">
+        </Button>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
