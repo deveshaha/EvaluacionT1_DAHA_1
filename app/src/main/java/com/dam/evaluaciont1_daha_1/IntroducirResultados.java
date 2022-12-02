@@ -62,10 +62,15 @@ public class IntroducirResultados extends AppCompatActivity {
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (et_date.getText().toString().isEmpty() || et_phase.getText().toString().isEmpty() || et_team1.getText().toString().isEmpty() || et_team2.getText().toString().isEmpty() || et_goals1.getText().toString().isEmpty() || et_goals2.getText().toString().isEmpty()) {
-                    Toast.makeText(IntroducirResultados.this, "Rellena todos los campos", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(IntroducirResultados.this, "Datos guardados", Toast.LENGTH_SHORT).show();
+                if (!et_date.getText().toString().matches("((\\(\\d{2}\\) ?)|(\\d{2}/))?\\d{2}/\\d{4} ([0-2][0-9]\\:[0-6][0-9])") ){
+                    Toast.makeText(IntroducirResultados.this, "El formato no es correcto", Toast.LENGTH_SHORT).show();
+                } else{
+                    if (et_date.getText().toString().isEmpty() || et_phase.getText().toString().isEmpty() || et_team1.getText().toString().isEmpty()
+                            || et_team2.getText().toString().isEmpty() || et_goals1.getText().toString().isEmpty() || et_goals2.getText().toString().isEmpty()) {
+                        Toast.makeText(IntroducirResultados.this, "Rellena todos los campos", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(IntroducirResultados.this, "Datos guardados", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
