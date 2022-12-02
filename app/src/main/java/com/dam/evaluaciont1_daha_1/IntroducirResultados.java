@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class IntroducirResultados extends AppCompatActivity {
 
@@ -34,6 +35,7 @@ public class IntroducirResultados extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IntroducirResultados.this, SeleccionEquipo.class);
+                startActivity(i);
             }
         });
 
@@ -41,6 +43,30 @@ public class IntroducirResultados extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IntroducirResultados.this, SeleccionEquipo.class);
+                startActivity(i);
+            }
+        });
+
+        btn_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et_date.setText("");
+                et_phase.setText("");
+                et_team1.setText("");
+                et_team2.setText("");
+                et_goals1.setText("");
+                et_goals2.setText("");
+            }
+        });
+
+        btn_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (et_date.getText().toString().isEmpty() || et_phase.getText().toString().isEmpty() || et_team1.getText().toString().isEmpty() || et_team2.getText().toString().isEmpty() || et_goals1.getText().toString().isEmpty() || et_goals2.getText().toString().isEmpty()) {
+                    Toast.makeText(IntroducirResultados.this, "Rellena todos los campos", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(IntroducirResultados.this, "Datos guardados", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

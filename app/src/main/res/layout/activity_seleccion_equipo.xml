@@ -426,7 +426,7 @@
             </Button>
 
             <Button
-                android:id="@+id/morroco"
+                android:id="@+id/btn_morroco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_morroco"
@@ -622,6 +622,7 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/et_choose_team"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_introduce"
