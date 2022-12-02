@@ -1,5 +1,9 @@
 package com.dam.evaluaciont1_daha_1;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,10 +13,33 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class IntroducirResultados extends AppCompatActivity {
+public class IntroducirResultados extends AppCompatActivity implements View.OnClickListener {
 
     Button btn_select_t1, btn_select_t2, btn_save, btn_clear;
     EditText et_date, et_phase, et_team1, et_team2, et_goals1, et_goals2;
+    String team1;
+    String team2;
+
+    ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    System.out.println("RESULTADO: " + result.getResultCode());
+                    if (result.getResultCode() == SeleccionEquipo.RESULT_OK_TEAM1) {
+                        System.out.println("Equipo 1" + result.getData().getStringExtra(SeleccionEquipo.CLAVE_TEAM1));
+                        team1 = result.getData().getStringExtra(SeleccionEquipo.CLAVE_TEAM1);
+                        et_team1.setText(team1);
+                    } else if (result.getResultCode() == SeleccionEquipo.RESULT_OK_TEAM2) {
+                        team2 = result.getData().getStringExtra(SeleccionEquipo.CLAVE_TEAM2);
+                    }
+
+                    if (team1 != null && team2 != null) {
+                        et_team1.setText(team1);
+                        et_team2.setText(team2);
+                    }
+                }
+            });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +47,13 @@ public class IntroducirResultados extends AppCompatActivity {
         setContentView(R.layout.activity_introducir_resultados);
 
         btn_select_t1 = findViewById(R.id.btn_select_team1);
+        btn_select_t1.setOnClickListener(this);
         btn_select_t2 = findViewById(R.id.btn_select_team2);
+        btn_select_t2.setOnClickListener(this);
         btn_save = findViewById(R.id.btn_save);
+        btn_save.setOnClickListener(this);
         btn_clear = findViewById(R.id.btn_clear);
+        btn_clear.setOnClickListener(this);
 
         et_date = findViewById(R.id.et_date_hour);
         et_phase = findViewById(R.id.et_group_phase);
@@ -31,50 +62,40 @@ public class IntroducirResultados extends AppCompatActivity {
         et_goals1 = findViewById(R.id.et_goals_team1);
         et_goals2 = findViewById(R.id.et_goals_team2);
 
-        btn_select_t1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(IntroducirResultados.this, SeleccionEquipo.class);
-                startActivity(i);
-            }
-        });
+    }
 
-        btn_select_t2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(IntroducirResultados.this, SeleccionEquipo.class);
-                startActivity(i);
-            }
-        });
-
-        btn_clear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                et_date.setText("");
-                et_phase.setText("");
-                et_team1.setText("");
-                et_team2.setText("");
-                et_goals1.setText("");
-                et_goals2.setText("");
-            }
-        });
-
-        btn_save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!et_date.getText().toString().matches("((\\(\\d{2}\\) ?)|(\\d{2}/))?\\d{2}/\\d{4} ([0-2][0-9]\\:[0-6][0-9])") ){
-                    Toast.makeText(IntroducirResultados.this, "El formato no es correcto", Toast.LENGTH_SHORT).show();
-                } else{
-                    if (et_date.getText().toString().isEmpty() || et_phase.getText().toString().isEmpty() || et_team1.getText().toString().isEmpty()
-                            || et_team2.getText().toString().isEmpty() || et_goals1.getText().toString().isEmpty() || et_goals2.getText().toString().isEmpty()) {
-                        Toast.makeText(IntroducirResultados.this, "Rellena todos los campos", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(IntroducirResultados.this, "Datos guardados", Toast.LENGTH_SHORT).show();
-                    }
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.btn_select_team1) {
+            System.out.println("Seleccionar equipo 1");
+            Intent i = new Intent(IntroducirResultados.this, SeleccionEquipo.class);
+            resultLauncher.launch(i);
+        } else if (view.getId() == R.id.btn_select_team2) {
+            System.out.println("Seleccionar equipo 2");
+            Intent i = new Intent(IntroducirResultados.this, SeleccionEquipo.class);
+            resultLauncher.launch(i);
+        } else if (view.getId() == R.id.btn_save){
+            System.out.println("Guardar");
+            if (!et_date.getText().toString().matches("((\\(\\d{2}\\) ?)|(\\d{2}/))?\\d{2}/\\d{4} ([0-2][0-9]\\:[0-6][0-9])")) {
+                Toast.makeText(IntroducirResultados.this, "El formato no es correcto", Toast.LENGTH_SHORT).show();
+            } else {
+                if (et_date.getText().toString().isEmpty() || et_phase.getText().toString().isEmpty() || et_team1.getText().toString().isEmpty()
+                        || et_team2.getText().toString().isEmpty() || et_goals1.getText().toString().isEmpty() || et_goals2.getText().toString().isEmpty()) {
+                    Toast.makeText(IntroducirResultados.this, "Rellena todos los campos", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(IntroducirResultados.this, "Datos guardados", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
-
+        } else if (view.getId() == R.id.btn_clear){
+            System.out.println("Limpiar");
+            et_date.setText("");
+            et_phase.setText("");
+            et_team1.setText("");
+            et_team2.setText("");
+            et_goals1.setText("");
+            et_goals2.setText("");
+        }
 
     }
+
 }

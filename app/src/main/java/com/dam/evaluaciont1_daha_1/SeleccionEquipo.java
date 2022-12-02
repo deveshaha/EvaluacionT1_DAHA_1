@@ -11,6 +11,11 @@ import android.widget.Toast;
 
 public class SeleccionEquipo extends AppCompatActivity implements View.OnClickListener {
 
+    public static final int RESULT_OK_TEAM1 = -1;
+    public static final int RESULT_OK_TEAM2 = 102;
+    public static final String CLAVE_TEAM1 = "TEAM1";
+    public static final String CLAVE_TEAM2 = "TEAM2";
+
     EditText et_team1;
 
     EditText et_choose_team;
@@ -104,21 +109,30 @@ public class SeleccionEquipo extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View view) {
         if (view == btn_cancel) {
-            System.out.println("btn_cancel");
-            Intent intent = new Intent(this, IntroducirResultados.class);
+            cancel();
         } else if (view == btn_accept) {
             System.out.println("btn_accept");
-            if (et_choose_team.getText().toString().isEmpty()) {
-                Toast.makeText(this, "Debes seleccionar un equipo", Toast.LENGTH_SHORT).show();
-            } else {
-                Intent intent = new Intent(this, IntroducirResultados.class);
-                intent.putExtra("team", et_choose_team.getText().toString());
-                startActivity(intent);
-                System.out.println("team: " + et_choose_team.getText().toString());
-            }
+            accept(view);
         } else{
             System.out.println("equipo pulsado: " + view.getId());
             et_choose_team.setText(((Button) view).getText());
         }
+    }
+
+    private void accept(View view) {
+        if (et_choose_team.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Debes seleccionar un equipo", Toast.LENGTH_SHORT).show();
+        } else {
+            String team = et_choose_team.getText().toString();
+            Intent i = new Intent();
+            i.putExtra(CLAVE_TEAM1, team);
+            setResult(RESULT_OK, i);
+            finish();
+        }
+    }
+
+    private void cancel() {
+        System.out.println("btn_cancel");
+        Intent intent = new Intent(this, IntroducirResultados.class);
     }
 }

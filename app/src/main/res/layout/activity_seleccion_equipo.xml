@@ -625,10 +625,11 @@
         android:id="@+id/et_choose_team"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/ll_btns"
+        android:enabled="false"
         android:hint="@string/hint_introduce"
         android:inputType="text"
-        android:layout_above="@id/ll_btns"
-        android:enabled="false">
+        android:minHeight="48dp">
 
     </EditText>
 
