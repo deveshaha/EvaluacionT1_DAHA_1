@@ -131,10 +131,6 @@ public class SeleccionEquipo extends AppCompatActivity implements View.OnClickLi
             Toast.makeText(this, "Debes seleccionar un equipo", Toast.LENGTH_SHORT).show();
         } else {
             String team = et_choose_team.getText().toString();
-//            Intent i = new Intent();
-//            i.putExtra(team, team);
-//            setResult(RESULT_OK, i);
-//            finish();
             Intent intent = new Intent();
             intent.putExtra(COUNTRY, et_choose_team.getText().toString());
             setResult(RESULT_OK, intent);

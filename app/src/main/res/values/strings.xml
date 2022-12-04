@@ -55,4 +55,12 @@
     <string name="btn_blank" />
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frag_phrase">phrase</string>
+    <string name="frag_team1">Team1</string>
+    <string name="frag_team2">Team2</string>
+    <string name="frag_date">date</string>
+    <string name="frag_goals_team1">goalsT1</string>
+    <string name="frag_goals_team2">goalsT2</string>
+    <string name="frag_goals1">Goals1</string>
+    <string name="frag_goals2">Goals2</string>
 </resources>

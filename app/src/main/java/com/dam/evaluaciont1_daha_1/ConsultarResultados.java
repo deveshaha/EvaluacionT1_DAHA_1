@@ -1,6 +1,11 @@
 package com.dam.evaluaciont1_daha_1;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +15,16 @@ import android.widget.EditText;
 
 import com.dam.evaluaciont1_daha_1.data.ResultList;
 
+import java.util.ArrayList;
+
 public class ConsultarResultados extends AppCompatActivity {
 
     Button btn_select;
     EditText et_country;
+
+    String country;
+
+    ActivityResultLauncher<Intent> selectCountry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +38,19 @@ public class ConsultarResultados extends AppCompatActivity {
         btn_select.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //select the country from the list and show the results from ResultList
+
+                selectCountry = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                        if (result.getResultCode() == SeleccionEquipo.RESULT_OK) {
+                            country = result.getData().getStringExtra(SeleccionEquipo.COUNTRY);
+                            et_country.setText(country);
+                        }
+                    }
+                });
+
                 Intent intent = new Intent(ConsultarResultados.this, SeleccionEquipo.class);
-                startActivity(intent);
+                selectCountry.launch(intent);
 
 
 

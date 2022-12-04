@@ -7,41 +7,38 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ResultadoFragmento#newInstance} factory method to
- * create an instance of this fragment.
- */
+import com.dam.evaluaciont1_daha_1.data.Result;
 public class ResultadoFragmento extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private static final String ARG_PHASE = "phase";
+    private static final String ARG_TEAM1 = "team1";
+    private static final String ARG_TEAM2 = "team2";
+    private static final String ARG_GOALS_T1 = "goals1";
+    private static final String ARG_GOALS_T2 = "goals2";
+    private static final String ARG_DATE = "date";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private String phase;
+    private String team1;
+    private String team2;
+    private String goals1;
+    private String goals2;
+    private String date;
 
     public ResultadoFragmento() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ResultadoFragmento.
-     */
-    // TODO: Rename and change types and number of parameters
     public static ResultadoFragmento newInstance(String param1, String param2) {
         ResultadoFragmento fragment = new ResultadoFragmento();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putString(ARG_PHASE, Result.getPhase());
+        args.putString(ARG_TEAM1, Result.getTeam1());
+        args.putString(ARG_TEAM2, Result.getTeam2());
+        args.putString(ARG_GOALS_T1, String.valueOf(Result.getGoals1()));
+        args.putString(ARG_GOALS_T2, String.valueOf(Result.getGoals2()));
+        args.putString(ARG_DATE, Result.getDate());
         fragment.setArguments(args);
         return fragment;
     }
@@ -50,8 +47,11 @@ public class ResultadoFragmento extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            phase = getArguments().getString(ARG_PHASE);
+            team1 = getArguments().getString(ARG_TEAM1);
+            team2 = getArguments().getString(ARG_TEAM2);
+            goals1 = getArguments().getString(ARG_GOALS_T1);
+            goals2 = getArguments().getString(ARG_GOALS_T2);
         }
     }
 
@@ -59,6 +59,21 @@ public class ResultadoFragmento extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_resultado_fragmento, container, false);
+        View view = inflater.inflate(R.layout.fragment_resultado_fragmento, container, false);
+        //TODO: Implementar el código para mostrar los datos del partido
+        TextView tvPhase = view.findViewById(R.id.tv_frag_phase);
+        TextView tvTeam1 = view.findViewById(R.id.tv_frag_team1);
+        TextView tvTeam2 = view.findViewById(R.id.tv_frag_team2);
+        TextView tvGoals1 = view.findViewById(R.id.tv_frag_goals1);
+        TextView tvGoals2 = view.findViewById(R.id.tv_frag_goals2);
+        TextView tvDate = view.findViewById(R.id.tv_frag_date);
+
+        tvPhase.setText(phase);
+        tvTeam1.setText(team1);
+        tvTeam2.setText(team2);
+        tvGoals1.setText(goals1);
+        tvGoals2.setText(goals2);
+        tvDate.setText(date);
+        return view;
     }
 }

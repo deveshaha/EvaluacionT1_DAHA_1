@@ -83,6 +83,10 @@ public class IntroducirResultados extends AppCompatActivity implements View.OnCl
             System.out.println("Guardar");
             if (!et_date.getText().toString().matches("((\\(\\d{2}\\) ?)|(\\d{2}/))?\\d{2}/\\d{4} ([0-2][0-9]\\:[0-6][0-9])")) {
                 Toast.makeText(IntroducirResultados.this, "El formato no es correcto", Toast.LENGTH_SHORT).show();
+//            } else if (!et_phase.getText().equals("Octavos") || !et_phase.getText().equals("Cuartos") || !et_phase.getText().equals("Semifinales") || !et_phase.getText().equals("Final")) {
+//                Toast.makeText(IntroducirResultados.this, "La fase no es correcta", Toast.LENGTH_SHORT).show();
+            } else if (et_team1.getText().toString().equals(et_team2.getText().toString())) {
+                Toast.makeText(IntroducirResultados.this, "Los equipos no pueden ser iguales", Toast.LENGTH_SHORT).show();
             } else {
                 if (et_date.getText().toString().isEmpty() || et_phase.getText().toString().isEmpty() || et_team1.getText().toString().isEmpty()
                         || et_team2.getText().toString().isEmpty() || et_goals1.getText().toString().isEmpty() || et_goals2.getText().toString().isEmpty()) {

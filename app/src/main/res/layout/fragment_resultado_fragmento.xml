@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/global_padding"
     tools:context=".ResultadoFragmento">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tv_frag_phase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="@string/frag_phrase" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tv_frag_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="@string/frag_team1"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+
+    <TextView
+        android:id="@+id/tv_frag_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="@string/frag_team2"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <TextView
+        android:id="@+id/tv_frag_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="@string/frag_date"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <TextView
+        android:id="@+id/tv_frag_goals1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="@string/frag_goals1"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/tv_frag_goals2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="@string/frag_goals2"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
