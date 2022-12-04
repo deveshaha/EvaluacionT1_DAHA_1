@@ -25,7 +25,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/et_team1"
+            android:id="@+id/et_country"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -36,12 +36,15 @@
         </EditText>
 
         <Button
+            android:id="@+id/btn_select"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btn_color"
             android:layout_marginStart="10dp"
             android:text="@string/select_team">
         </Button>
+
+
 
     </LinearLayout>
 

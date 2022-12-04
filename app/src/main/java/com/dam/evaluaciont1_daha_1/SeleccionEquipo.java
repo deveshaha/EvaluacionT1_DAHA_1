@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 public class SeleccionEquipo extends AppCompatActivity implements View.OnClickListener {
 
+    public static String COUNTRY = "";
+
     public static final int RESULT_OK_TEAM1 = -1;
     public static final int RESULT_OK_TEAM2 = 102;
     public static final String CLAVE_TEAM1 = "TEAM1";
@@ -34,6 +36,11 @@ public class SeleccionEquipo extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seleccion_equipo);
 
+        callButtons();
+
+    }
+
+    private void callButtons() {
         et_choose_team = findViewById(R.id.et_choose_team);
         btn_accept = findViewById(R.id.btn_accept);
         btn_accept.setOnClickListener(this);
@@ -103,7 +110,6 @@ public class SeleccionEquipo extends AppCompatActivity implements View.OnClickLi
         btn_tunisia.setOnClickListener(this);
         btn_uruguay = findViewById(R.id.btn_uruguay);
         btn_uruguay.setOnClickListener(this);
-
     }
 
     @Override
@@ -112,21 +118,26 @@ public class SeleccionEquipo extends AppCompatActivity implements View.OnClickLi
             cancel();
         } else if (view == btn_accept) {
             System.out.println("btn_accept");
-            accept(view);
+            accept();
         } else{
             System.out.println("equipo pulsado: " + view.getId());
             et_choose_team.setText(((Button) view).getText());
+            COUNTRY = et_choose_team.getText().toString();
         }
     }
 
-    private void accept(View view) {
+    private void accept() {
         if (et_choose_team.getText().toString().isEmpty()) {
             Toast.makeText(this, "Debes seleccionar un equipo", Toast.LENGTH_SHORT).show();
         } else {
             String team = et_choose_team.getText().toString();
-            Intent i = new Intent();
-            i.putExtra(CLAVE_TEAM1, team);
-            setResult(RESULT_OK, i);
+//            Intent i = new Intent();
+//            i.putExtra(team, team);
+//            setResult(RESULT_OK, i);
+//            finish();
+            Intent intent = new Intent();
+            intent.putExtra(COUNTRY, et_choose_team.getText().toString());
+            setResult(RESULT_OK, intent);
             finish();
         }
     }

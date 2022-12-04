@@ -3,7 +3,7 @@ package com.dam.evaluaciont1_daha_1.data;
 import java.util.ArrayList;
 
 public class ResultList {
-    private ArrayList<Result> results;
+    private static ArrayList<Result> results;
 
 public ResultList() {
         results = new ArrayList<>();
@@ -52,7 +52,7 @@ public ResultList() {
         return resultsByCountry;
     }
 
-public void addResult(Result result) {
+public static void addResult(Result result) {
         results.add(result);
     }
 

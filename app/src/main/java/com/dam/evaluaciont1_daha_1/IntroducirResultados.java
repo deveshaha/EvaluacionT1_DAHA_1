@@ -13,33 +13,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.dam.evaluaciont1_daha_1.data.ResultList;
+
 public class IntroducirResultados extends AppCompatActivity implements View.OnClickListener {
+
+    private ActivityResultLauncher<Intent> selectFirstTeam;
+    private ActivityResultLauncher<Intent> selectSecondTeam;
 
     Button btn_select_t1, btn_select_t2, btn_save, btn_clear;
     EditText et_date, et_phase, et_team1, et_team2, et_goals1, et_goals2;
     String team1;
     String team2;
-
-    ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-                    System.out.println("RESULTADO: " + result.getResultCode());
-                    if (result.getResultCode() == SeleccionEquipo.RESULT_OK_TEAM1) {
-                        System.out.println("Equipo 1" + result.getData().getStringExtra(SeleccionEquipo.CLAVE_TEAM1));
-                        team1 = result.getData().getStringExtra(SeleccionEquipo.CLAVE_TEAM1);
-                        et_team1.setText(team1);
-                    } else if (result.getResultCode() == SeleccionEquipo.RESULT_OK_TEAM2) {
-                        team2 = result.getData().getStringExtra(SeleccionEquipo.CLAVE_TEAM2);
-                    }
-
-                    if (team1 != null && team2 != null) {
-                        et_team1.setText(team1);
-                        et_team2.setText(team2);
-                    }
-                }
-            });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +46,27 @@ public class IntroducirResultados extends AppCompatActivity implements View.OnCl
         et_goals1 = findViewById(R.id.et_goals_team1);
         et_goals2 = findViewById(R.id.et_goals_team2);
 
+        selectFirstTeam = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+            @Override
+            public void onActivityResult(ActivityResult result) {
+                if (result.getResultCode() == SeleccionEquipo.RESULT_OK) {
+                    team1 = result.getData().getStringExtra(SeleccionEquipo.COUNTRY);
+                    et_team1.setText(team1);
+                }
+            }
+        });
+
+        selectSecondTeam = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+            @Override
+            public void onActivityResult(ActivityResult result) {
+                if (result.getResultCode() == SeleccionEquipo.RESULT_OK) {
+                    team2 = result.getData().getStringExtra(SeleccionEquipo.COUNTRY);
+                    et_team2.setText(team2);
+                }
+            }
+        });
+
+
     }
 
     @Override
@@ -69,11 +74,11 @@ public class IntroducirResultados extends AppCompatActivity implements View.OnCl
         if (view.getId() == R.id.btn_select_team1) {
             System.out.println("Seleccionar equipo 1");
             Intent i = new Intent(IntroducirResultados.this, SeleccionEquipo.class);
-            resultLauncher.launch(i);
+            selectFirstTeam.launch(i);
         } else if (view.getId() == R.id.btn_select_team2) {
             System.out.println("Seleccionar equipo 2");
             Intent i = new Intent(IntroducirResultados.this, SeleccionEquipo.class);
-            resultLauncher.launch(i);
+            selectSecondTeam.launch(i);
         } else if (view.getId() == R.id.btn_save){
             System.out.println("Guardar");
             if (!et_date.getText().toString().matches("((\\(\\d{2}\\) ?)|(\\d{2}/))?\\d{2}/\\d{4} ([0-2][0-9]\\:[0-6][0-9])")) {
@@ -84,6 +89,8 @@ public class IntroducirResultados extends AppCompatActivity implements View.OnCl
                     Toast.makeText(IntroducirResultados.this, "Rellena todos los campos", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(IntroducirResultados.this, "Datos guardados", Toast.LENGTH_SHORT).show();
+//                    ResultList.addResult(et_date.getText().toString(), et_phase.getText().toString(), et_team1.getText().toString(), et_team2.getText().toString(), et_goals1.getText(), et_goals2.getText());
+                    Toast.makeText(this, "Resultado guardado", Toast.LENGTH_SHORT).show();
                 }
             }
         } else if (view.getId() == R.id.btn_clear){
