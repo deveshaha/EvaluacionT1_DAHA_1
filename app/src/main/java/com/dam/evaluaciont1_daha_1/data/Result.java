@@ -1,6 +1,7 @@
 package com.dam.evaluaciont1_daha_1.data;
 
 public class Result {
+
     private final String phase;
     private final String date;
     private final String team1;

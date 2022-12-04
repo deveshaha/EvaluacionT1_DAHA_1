@@ -30,15 +30,15 @@ public class ResultadoFragmento extends Fragment {
         // Required empty public constructor
     }
 
-    public static ResultadoFragmento newInstance(String param1, String param2) {
+    public static ResultadoFragmento newInstance(Result result) {
         ResultadoFragmento fragment = new ResultadoFragmento();
         Bundle args = new Bundle();
-        args.putString(ARG_PHASE, Result.getPhase());
-        args.putString(ARG_TEAM1, Result.getTeam1());
-        args.putString(ARG_TEAM2, Result.getTeam2());
-        args.putString(ARG_GOALS_T1, String.valueOf(Result.getGoals1()));
-        args.putString(ARG_GOALS_T2, String.valueOf(Result.getGoals2()));
-        args.putString(ARG_DATE, Result.getDate());
+        args.putString(ARG_PHASE, result.getPhase());
+        args.putString(ARG_TEAM1, result.getTeam1());
+        args.putString(ARG_TEAM2, result.getTeam2());
+        args.putString(ARG_GOALS_T1, String.valueOf(result.getGoals1()));
+        args.putString(ARG_GOALS_T2, String.valueOf(result.getGoals2()));
+        args.putString(ARG_DATE, result.getDate());
         fragment.setArguments(args);
         return fragment;
     }
